@@ -14,6 +14,7 @@
 		A1E77C84229FB4A700002776 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1E77C82229FB4A700002776 /* LaunchScreen.storyboard */; };
 		A1E77C8F229FB4A700002776 /* TermProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E77C8E229FB4A700002776 /* TermProjectTests.swift */; };
 		A1E77C9A229FB4A700002776 /* TermProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E77C99229FB4A700002776 /* TermProjectUITests.swift */; };
+		A1E77CAA229FC30C00002776 /* AnimalSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E77CA9229FC30C00002776 /* AnimalSearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		A1E77C95229FB4A700002776 /* TermProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TermProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1E77C99229FB4A700002776 /* TermProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermProjectUITests.swift; sourceTree = "<group>"; };
 		A1E77C9B229FB4A700002776 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1E77CA9229FC30C00002776 /* AnimalSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalSearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				A1E77C80229FB4A700002776 /* Assets.xcassets */,
 				A1E77C82229FB4A700002776 /* LaunchScreen.storyboard */,
 				A1E77C85229FB4A700002776 /* Info.plist */,
+				A1E77CA9229FC30C00002776 /* AnimalSearchViewController.swift */,
 			);
 			path = TermProject;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1E77C7C229FB4A700002776 /* ViewController.swift in Sources */,
+				A1E77CAA229FC30C00002776 /* AnimalSearchViewController.swift in Sources */,
 				A1E77C7A229FB4A700002776 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
