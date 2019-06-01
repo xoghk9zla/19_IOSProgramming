@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  TermProject
 //
-//  Created by KPUGAME on 2019. 5. 30..
+//  Created by KPUGAME on 2019. 6. 1..
 //  Copyright © 2019년 KPUGAME. All rights reserved.
 //
 
