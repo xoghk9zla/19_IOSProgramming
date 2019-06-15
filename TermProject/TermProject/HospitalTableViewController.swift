@@ -24,7 +24,7 @@ class HospitalTableViewController: UITableViewController, XMLParserDelegate {
     
     func beginParsing(){
         posts = []
-        parser = XMLParser(contentsOf:(URL(string:"https://openapi.gg.go.kr/OrganicAnimalProtectionFacilit?KEY=774345bd63264a6fa1e923f279aed9da"))!)!
+        parser = XMLParser(contentsOf:(URL(string:url!))!)!
         parser.delegate = self
         parser.parse()
         tbData!.reloadData()
@@ -48,8 +48,6 @@ class HospitalTableViewController: UITableViewController, XMLParserDelegate {
             hospitalName.append(string)
         } else if element.isEqual(to: "REFINE_ROADNM_ADDR"){
             addr.append(string)
-        } else if element.isEqual(to: "SIGUN_NM"){
-            print(string)
         }
         
     }

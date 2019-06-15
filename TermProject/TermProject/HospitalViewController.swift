@@ -29,6 +29,7 @@ class HospitalViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        // 시군코드 추가 해야함
         if row == 0{
             sgguCd = "41820"
         } else if row == 1{
@@ -37,15 +38,16 @@ class HospitalViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
             sgguCd = "41290"
         } else if row == 3{
             sgguCd = "41210"
+        } else{
+            sgguCd = "41190"
         }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         if segue.identifier == "segueToHospitalTableView"{
             if let navController = segue.destination as? UINavigationController{
-                if let hospitalTableViewController = navController.topViewController as? HospitalViewController{
-                    //hospitalTableViewController.url = url + sgguCd
-                    print(hospitalTableViewController.url)
+                if let hospitalTableViewController = navController.topViewController as? HospitalTableViewController{
+                    hospitalTableViewController.url = url + sgguCd
                 }
             }
         }
