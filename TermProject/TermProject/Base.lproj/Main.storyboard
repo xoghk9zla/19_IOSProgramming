@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--동물병원 정보 검색-->
+        <!--동물 보호기관 검색-->
         <scene sceneID="okh-id-0Ma">
             <objects>
-                <viewController id="jTl-CX-Ntz" sceneMemberID="viewController">
+                <viewController id="jTl-CX-Ntz" customClass="HospitalViewController" customModule="TermProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="X7Q-lb-dUW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,14 +21,25 @@
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RkN-Nd-hOZ">
                                 <rect key="frame" x="0.0" y="170" width="375" height="162"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="X7Q-lb-dUW" id="gDF-Gb-JWW"/>
+                                    <outlet property="delegate" destination="X7Q-lb-dUW" id="fcm-x8-7kT"/>
+                                </connections>
                             </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="tVj-Bh-HJx"/>
                     </view>
-                    <navigationItem key="navigationItem" title="동물병원 정보 검색" id="5pG-Gh-ED1">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="search" id="Sx2-Je-Ytu"/>
+                    <navigationItem key="navigationItem" title="동물 보호기관 검색" id="5pG-Gh-ED1">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="search" id="Sx2-Je-Ytu">
+                            <connections>
+                                <segue destination="5wb-sp-iYI" kind="show" identifier="segueToHospitalTableView" id="srg-eJ-bI1"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="pickerView" destination="RkN-Nd-hOZ" id="8yJ-Kg-vYm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qKc-vH-pNz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -141,6 +152,82 @@
             </objects>
             <point key="canvasLocation" x="2433" y="-573"/>
         </scene>
+        <!--동물 보호 기관-->
+        <scene sceneID="3tH-8F-9q7">
+            <objects>
+                <tableViewController id="Eui-b6-l5T" customClass="HospitalTableViewController" customModule="TermProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="WgM-nN-ALu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HospitalCell" textLabel="hLP-QP-N64" detailTextLabel="chK-rV-Zhu" style="IBUITableViewCellStyleSubtitle" id="C77-fo-sYa">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="C77-fo-sYa" id="mfe-OK-Ysx">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hLP-QP-N64">
+                                            <rect key="frame" x="16" y="5" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="chK-rV-Zhu">
+                                            <rect key="frame" x="16" y="25.5" width="44" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Eui-b6-l5T" id="dOK-0R-JW9"/>
+                            <outlet property="delegate" destination="Eui-b6-l5T" id="cta-Xy-IjV"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="동물 보호 기관" id="yeI-rq-gOM">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="Lc2-cN-xmQ"/>
+                        <barButtonItem key="rightBarButtonItem" title="지도표시" id="eAG-i0-Mt6">
+                            <connections>
+                                <segue destination="DW7-XO-Wt6" kind="show" id="E9U-2j-P2M"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tbData" destination="WgM-nN-ALu" id="zla-oo-QBb"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4LN-4W-Tv2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2433" y="125"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qnX-DR-e0P">
+            <objects>
+                <viewController id="DW7-XO-Wt6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cTz-mA-D6l">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="dR8-qR-i9O">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Qy3-oP-73d"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K6q-ff-48o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3232.8000000000002" y="124.58770614692655"/>
+        </scene>
         <!--Animal Map View Controller-->
         <scene sceneID="NZo-kl-15h">
             <objects>
@@ -202,11 +289,11 @@
             </objects>
             <point key="canvasLocation" x="1629.5999999999999" y="-573.46326836581716"/>
         </scene>
-        <!--동물병원 검색-->
+        <!--동물 보호기관 검색-->
         <scene sceneID="ORF-UX-KGt">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="alp-L7-KNx" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="동물병원 검색" image="veterinary" id="mYy-Tp-KHe"/>
+                    <tabBarItem key="tabBarItem" title="동물 보호기관 검색" image="veterinary" id="mYy-Tp-KHe"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AES-dE-ZYp">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -255,6 +342,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pv0-No-zA4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-39" y="913"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5m9-cU-NrY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5wb-sp-iYI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="y4y-3e-Lw7">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Eui-b6-l5T" kind="relationship" relationship="rootViewController" id="8mN-jq-BJJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iPJ-7i-b9E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1630" y="125"/>
         </scene>
     </scenes>
     <resources>
