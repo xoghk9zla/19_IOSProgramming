@@ -10,6 +10,26 @@
 		A11DA6D222B679E2000128FD /* HospitalMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11DA6D122B679E2000128FD /* HospitalMapViewController.swift */; };
 		A11DA6D422B67C45000128FD /* Hospital.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11DA6D322B67C45000128FD /* Hospital.swift */; };
 		A11DA6D622B69675000128FD /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11DA6D522B69675000128FD /* Animal.swift */; };
+		A11DA6E222B6B3FD000128FD /* AudioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11DA6DE22B6B3F7000128FD /* AudioController.swift */; };
+		A11DA6E322B6B3FD000128FD /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11DA6DF22B6B3F9000128FD /* Config.swift */; };
+		A11DA6E422B6B3FD000128FD /* StardustView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11DA6E022B6B3FB000128FD /* StardustView.swift */; };
+		A11DA6E522B6B3FD000128FD /* ExplodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11DA6E122B6B3FD000128FD /* ExplodeView.swift */; };
+		A11DA6EC22B6BFE6000128FD /* Comic_Andy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A11DA6EB22B6BFE6000128FD /* Comic_Andy.ttf */; };
+		A11DA6F022B6C001000128FD /* ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A11DA6ED22B6BFFD000128FD /* ding.mp3 */; };
+		A11DA6F122B6C001000128FD /* win.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A11DA6EE22B6BFFF000128FD /* win.mp3 */; };
+		A11DA6F222B6C001000128FD /* wrong.m4a in Resources */ = {isa = PBXBuildFile; fileRef = A11DA6EF22B6C001000128FD /* wrong.m4a */; };
+		A11DA6F422B6C00E000128FD /* particle.png in Resources */ = {isa = PBXBuildFile; fileRef = A11DA6F322B6C00E000128FD /* particle.png */; };
+		A11DA6FF22B6C02E000128FD /* board@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A11DA6F522B6C01C000128FD /* board@2x.jpg */; };
+		A11DA70022B6C02E000128FD /* btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A11DA6F622B6C01E000128FD /* btn@2x.png */; };
+		A11DA70122B6C02E000128FD /* board.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A11DA6F722B6C020000128FD /* board.jpg */; };
+		A11DA70222B6C02E000128FD /* tile.png in Resources */ = {isa = PBXBuildFile; fileRef = A11DA6F822B6C022000128FD /* tile.png */; };
+		A11DA70322B6C02E000128FD /* tile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A11DA6F922B6C024000128FD /* tile@2x.png */; };
+		A11DA70422B6C02E000128FD /* btn.png in Resources */ = {isa = PBXBuildFile; fileRef = A11DA6FA22B6C026000128FD /* btn.png */; };
+		A11DA70522B6C02E000128FD /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A11DA6FB22B6C028000128FD /* Default@2x.png */; };
+		A11DA70622B6C02E000128FD /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A11DA6FC22B6C02A000128FD /* Default.png */; };
+		A11DA70722B6C02E000128FD /* slot.png in Resources */ = {isa = PBXBuildFile; fileRef = A11DA6FD22B6C02C000128FD /* slot.png */; };
+		A11DA70822B6C02E000128FD /* slot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A11DA6FE22B6C02E000128FD /* slot@2x.png */; };
+		A11DA70A22B6C7DB000128FD /* DetailAnimalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11DA70922B6C7DB000128FD /* DetailAnimalTableViewController.swift */; };
 		A1A70B4E22B4B05900671BA4 /* HospitalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A70B4D22B4B05900671BA4 /* HospitalViewController.swift */; };
 		A1A70B5022B50E7300671BA4 /* HospitalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A70B4F22B50E7300671BA4 /* HospitalTableViewController.swift */; };
 		A1E77CB822A29EC000002776 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E77CB722A29EC000002776 /* AppDelegate.swift */; };
@@ -45,6 +65,26 @@
 		A11DA6D122B679E2000128FD /* HospitalMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalMapViewController.swift; sourceTree = "<group>"; };
 		A11DA6D322B67C45000128FD /* Hospital.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hospital.swift; sourceTree = "<group>"; };
 		A11DA6D522B69675000128FD /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		A11DA6DE22B6B3F7000128FD /* AudioController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioController.swift; sourceTree = "<group>"; };
+		A11DA6DF22B6B3F9000128FD /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		A11DA6E022B6B3FB000128FD /* StardustView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StardustView.swift; sourceTree = "<group>"; };
+		A11DA6E122B6B3FD000128FD /* ExplodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExplodeView.swift; sourceTree = "<group>"; };
+		A11DA6EB22B6BFE6000128FD /* Comic_Andy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Comic_Andy.ttf; sourceTree = "<group>"; };
+		A11DA6ED22B6BFFD000128FD /* ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ding.mp3; sourceTree = "<group>"; };
+		A11DA6EE22B6BFFF000128FD /* win.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = win.mp3; sourceTree = "<group>"; };
+		A11DA6EF22B6C001000128FD /* wrong.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = wrong.m4a; sourceTree = "<group>"; };
+		A11DA6F322B6C00E000128FD /* particle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = particle.png; sourceTree = "<group>"; };
+		A11DA6F522B6C01C000128FD /* board@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "board@2x.jpg"; sourceTree = "<group>"; };
+		A11DA6F622B6C01E000128FD /* btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn@2x.png"; sourceTree = "<group>"; };
+		A11DA6F722B6C020000128FD /* board.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = board.jpg; sourceTree = "<group>"; };
+		A11DA6F822B6C022000128FD /* tile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tile.png; sourceTree = "<group>"; };
+		A11DA6F922B6C024000128FD /* tile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tile@2x.png"; sourceTree = "<group>"; };
+		A11DA6FA22B6C026000128FD /* btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn.png; sourceTree = "<group>"; };
+		A11DA6FB22B6C028000128FD /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		A11DA6FC22B6C02A000128FD /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		A11DA6FD22B6C02C000128FD /* slot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slot.png; sourceTree = "<group>"; };
+		A11DA6FE22B6C02E000128FD /* slot@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slot@2x.png"; sourceTree = "<group>"; };
+		A11DA70922B6C7DB000128FD /* DetailAnimalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAnimalTableViewController.swift; sourceTree = "<group>"; };
 		A1A70B4D22B4B05900671BA4 /* HospitalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalViewController.swift; sourceTree = "<group>"; };
 		A1A70B4F22B50E7300671BA4 /* HospitalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalTableViewController.swift; sourceTree = "<group>"; };
 		A1E77CB422A29EC000002776 /* TermProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TermProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,6 +130,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A11DA6E622B6BFE6000128FD /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				A11DA6E722B6BFE6000128FD /* Images */,
+				A11DA6E822B6BFE6000128FD /* Particles */,
+				A11DA6E922B6BFE6000128FD /* Audio */,
+				A11DA6EA22B6BFE6000128FD /* Font */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		A11DA6E722B6BFE6000128FD /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				A11DA6F722B6C020000128FD /* board.jpg */,
+				A11DA6F522B6C01C000128FD /* board@2x.jpg */,
+				A11DA6FA22B6C026000128FD /* btn.png */,
+				A11DA6F622B6C01E000128FD /* btn@2x.png */,
+				A11DA6FC22B6C02A000128FD /* Default.png */,
+				A11DA6FB22B6C028000128FD /* Default@2x.png */,
+				A11DA6FD22B6C02C000128FD /* slot.png */,
+				A11DA6FE22B6C02E000128FD /* slot@2x.png */,
+				A11DA6F822B6C022000128FD /* tile.png */,
+				A11DA6F922B6C024000128FD /* tile@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		A11DA6E822B6BFE6000128FD /* Particles */ = {
+			isa = PBXGroup;
+			children = (
+				A11DA6F322B6C00E000128FD /* particle.png */,
+			);
+			path = Particles;
+			sourceTree = "<group>";
+		};
+		A11DA6E922B6BFE6000128FD /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				A11DA6ED22B6BFFD000128FD /* ding.mp3 */,
+				A11DA6EE22B6BFFF000128FD /* win.mp3 */,
+				A11DA6EF22B6C001000128FD /* wrong.m4a */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		A11DA6EA22B6BFE6000128FD /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				A11DA6EB22B6BFE6000128FD /* Comic_Andy.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		A1E77CAB22A29EC000002776 = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +207,11 @@
 		A1E77CB622A29EC000002776 /* TermProject */ = {
 			isa = PBXGroup;
 			children = (
+				A11DA6E622B6BFE6000128FD /* Assets */,
+				A11DA6DE22B6B3F7000128FD /* AudioController.swift */,
+				A11DA6DF22B6B3F9000128FD /* Config.swift */,
+				A11DA6E122B6B3FD000128FD /* ExplodeView.swift */,
+				A11DA6E022B6B3FB000128FD /* StardustView.swift */,
 				A1E77CB722A29EC000002776 /* AppDelegate.swift */,
 				A1E77CB922A29EC000002776 /* ViewController.swift */,
 				A1E77CBB22A29EC000002776 /* Main.storyboard */,
@@ -127,6 +226,7 @@
 				A11DA6D122B679E2000128FD /* HospitalMapViewController.swift */,
 				A11DA6D322B67C45000128FD /* Hospital.swift */,
 				A11DA6D522B69675000128FD /* Animal.swift */,
+				A11DA70922B6C7DB000128FD /* DetailAnimalTableViewController.swift */,
 			);
 			path = TermProject;
 			sourceTree = "<group>";
@@ -253,8 +353,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A11DA70722B6C02E000128FD /* slot.png in Resources */,
+				A11DA70122B6C02E000128FD /* board.jpg in Resources */,
+				A11DA6EC22B6BFE6000128FD /* Comic_Andy.ttf in Resources */,
+				A11DA6F022B6C001000128FD /* ding.mp3 in Resources */,
+				A11DA70622B6C02E000128FD /* Default.png in Resources */,
+				A11DA6FF22B6C02E000128FD /* board@2x.jpg in Resources */,
+				A11DA70422B6C02E000128FD /* btn.png in Resources */,
+				A11DA70022B6C02E000128FD /* btn@2x.png in Resources */,
+				A11DA70222B6C02E000128FD /* tile.png in Resources */,
 				A1E77CC222A29EC100002776 /* LaunchScreen.storyboard in Resources */,
+				A11DA70322B6C02E000128FD /* tile@2x.png in Resources */,
+				A11DA6F422B6C00E000128FD /* particle.png in Resources */,
+				A11DA6F122B6C001000128FD /* win.mp3 in Resources */,
 				A1E77CBF22A29EC100002776 /* Assets.xcassets in Resources */,
+				A11DA70822B6C02E000128FD /* slot@2x.png in Resources */,
+				A11DA70522B6C02E000128FD /* Default@2x.png in Resources */,
+				A11DA6F222B6C001000128FD /* wrong.m4a in Resources */,
 				A1E77CBD22A29EC000002776 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,12 +395,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A11DA70A22B6C7DB000128FD /* DetailAnimalTableViewController.swift in Sources */,
+				A11DA6E522B6B3FD000128FD /* ExplodeView.swift in Sources */,
+				A11DA6E222B6B3FD000128FD /* AudioController.swift in Sources */,
 				A1E77CE622A2A49A00002776 /* AnimalSearchTableViewController.swift in Sources */,
 				A1E77CBA22A29EC000002776 /* ViewController.swift in Sources */,
 				A1A70B4E22B4B05900671BA4 /* HospitalViewController.swift in Sources */,
 				A11DA6D222B679E2000128FD /* HospitalMapViewController.swift in Sources */,
+				A11DA6E322B6B3FD000128FD /* Config.swift in Sources */,
 				A1E77CEA22A2C88400002776 /* HappenPlace.swift in Sources */,
 				A11DA6D422B67C45000128FD /* Hospital.swift in Sources */,
+				A11DA6E422B6B3FD000128FD /* StardustView.swift in Sources */,
 				A1E77CB822A29EC000002776 /* AppDelegate.swift in Sources */,
 				A1A70B5022B50E7300671BA4 /* HospitalTableViewController.swift in Sources */,
 				A1E77CE822A2A6CC00002776 /* AnimalMapViewController.swift in Sources */,

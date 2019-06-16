@@ -10,7 +10,7 @@ import UIKit
 
 class AnimalSearchTableViewController: UITableViewController, XMLParserDelegate {
     @IBOutlet var tbData: UITableView!
-
+    
     var url: String?
     
     var parser = XMLParser()
@@ -24,7 +24,18 @@ class AnimalSearchTableViewController: UITableViewController, XMLParserDelegate 
     var color = NSMutableString()       // 색상
     var happenplace = NSMutableString() // 발견 장소
     
+    var desertionNo = "" // 유기번호
+    
     var imageurl = NSMutableString()
+    
+    var audioController: AudioController
+    
+    required init?(coder aDecoder: NSCoder) {
+        audioController = AudioController()
+        audioController.preloadAudioEffects(audioFileNames: AudioEffectFiles)
+        
+        super.init(coder: aDecoder)
+    }
     
     func beginParsing(){
         posts = []
@@ -32,6 +43,18 @@ class AnimalSearchTableViewController: UITableViewController, XMLParserDelegate 
         parser.delegate = self
         parser.parse()
         tbData!.reloadData()
+        
+        audioController.playerEffect(name: SoundWin)
+        
+        let startX: CGFloat = ScreenWidth - 100
+        let startY: CGFloat = 0
+        let endY: CGFloat = ScreenHeight + 300
+        
+        let stars = StardustView(frame: CGRect(x: startX, y: startY, width: 10, height: 10))
+        self.view.addSubview(stars)
+        self.view.sendSubviewToBack(_: stars)
+        
+        UIView.animate(withDuration: 3.0, delay: 0.0, options: UIView.AnimationOptions.curveEaseOut,animations: {stars.center = CGPoint(x: startX, y: endY)}, completion: {(value:Bool) in stars.removeFromSuperview()})
     }
     
     func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String: String]){
@@ -135,6 +158,16 @@ class AnimalSearchTableViewController: UITableViewController, XMLParserDelegate 
         if segue.identifier == "segueToMapView"{
             if let mapViewController = segue.destination as? AnimalMapViewController{
                 mapViewController.posts = posts
+            }
+        }
+        
+        if segue.identifier == "segueToAnimalDetail"{
+            if let cell = sender as? UITableViewCell{
+                let indexPath = tableView.indexPath(for: cell)
+                //desertionNo = (posts.object(at: (indexPath?.row)!) as AnyObject).value(forKey:"desertionNo") as! NSString as String
+                if let detailAnimalTableViewController = segue.destination as? DetailAnimalTableViewController{
+                    //detailAnimalTableViewController.url = url!// + "123" + desertionNo
+                }
             }
         }
     }
