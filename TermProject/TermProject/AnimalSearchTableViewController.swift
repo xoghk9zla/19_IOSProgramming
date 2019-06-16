@@ -10,7 +10,7 @@ import UIKit
 
 class AnimalSearchTableViewController: UITableViewController, XMLParserDelegate {
     @IBOutlet var tbData: UITableView!
-    
+
     var url: String?
     
     var parser = XMLParser()
@@ -96,7 +96,7 @@ class AnimalSearchTableViewController: UITableViewController, XMLParserDelegate 
         super.viewDidLoad()
         
         beginParsing()
-
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

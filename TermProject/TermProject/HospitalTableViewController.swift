@@ -22,6 +22,9 @@ class HospitalTableViewController: UITableViewController, XMLParserDelegate {
     var hospitalName = NSMutableString()
     var addr = NSMutableString()
     
+    var XPos = NSMutableString()
+    var YPos = NSMutableString()
+    
     func beginParsing(){
         posts = []
         parser = XMLParser(contentsOf:(URL(string:url!))!)!
@@ -39,6 +42,10 @@ class HospitalTableViewController: UITableViewController, XMLParserDelegate {
             hospitalName = ""
             addr = NSMutableString()
             addr = ""
+            XPos = NSMutableString()
+            XPos = ""
+            YPos = NSMutableString()
+            YPos = ""
             
         }
     }
@@ -48,6 +55,10 @@ class HospitalTableViewController: UITableViewController, XMLParserDelegate {
             hospitalName.append(string)
         } else if element.isEqual(to: "REFINE_ROADNM_ADDR"){
             addr.append(string)
+        } else if element.isEqual(to: "REFINE_WGS84_LOGT"){
+            XPos.append(string)
+        } else if element.isEqual(to: "REFINE_WGS84_LAT"){
+            YPos.append(string)
         }
         
     }
@@ -60,6 +71,12 @@ class HospitalTableViewController: UITableViewController, XMLParserDelegate {
             }
             if !addr.isEqual(nil) {
                 elements.setObject(addr, forKey: "REFINE_ROADNM_ADDR" as NSCopying)
+            }
+            if !XPos.isEqual(nil) {
+                elements.setObject(XPos, forKey: "REFINE_WGS84_LOGT" as NSCopying)
+            }
+            if !YPos.isEqual(nil) {
+                elements.setObject(YPos, forKey: "REFINE_WGS84_LAT" as NSCopying)
             }
             posts.add(elements)
         }
@@ -98,6 +115,13 @@ class HospitalTableViewController: UITableViewController, XMLParserDelegate {
         return cell
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        if segue.identifier == "segueToHospitalMapView"{
+            if let mapViewController = segue.destination as? AnimalMapViewController{
+                mapViewController.posts = posts
+            }
+        }
+    }
 
     /*
     // Override to support conditional editing of the table view.

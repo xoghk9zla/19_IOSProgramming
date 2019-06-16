@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A11DA6D222B679E2000128FD /* HospitalMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11DA6D122B679E2000128FD /* HospitalMapViewController.swift */; };
+		A11DA6D422B67C45000128FD /* Hospital.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11DA6D322B67C45000128FD /* Hospital.swift */; };
+		A11DA6D622B69675000128FD /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11DA6D522B69675000128FD /* Animal.swift */; };
 		A1A70B4E22B4B05900671BA4 /* HospitalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A70B4D22B4B05900671BA4 /* HospitalViewController.swift */; };
 		A1A70B5022B50E7300671BA4 /* HospitalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A70B4F22B50E7300671BA4 /* HospitalTableViewController.swift */; };
 		A1E77CB822A29EC000002776 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E77CB722A29EC000002776 /* AppDelegate.swift */; };
@@ -39,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A11DA6D122B679E2000128FD /* HospitalMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalMapViewController.swift; sourceTree = "<group>"; };
+		A11DA6D322B67C45000128FD /* Hospital.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hospital.swift; sourceTree = "<group>"; };
+		A11DA6D522B69675000128FD /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		A1A70B4D22B4B05900671BA4 /* HospitalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalViewController.swift; sourceTree = "<group>"; };
 		A1A70B4F22B50E7300671BA4 /* HospitalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalTableViewController.swift; sourceTree = "<group>"; };
 		A1E77CB422A29EC000002776 /* TermProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TermProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,6 +124,9 @@
 				A1E77CE922A2C88400002776 /* HappenPlace.swift */,
 				A1A70B4D22B4B05900671BA4 /* HospitalViewController.swift */,
 				A1A70B4F22B50E7300671BA4 /* HospitalTableViewController.swift */,
+				A11DA6D122B679E2000128FD /* HospitalMapViewController.swift */,
+				A11DA6D322B67C45000128FD /* Hospital.swift */,
+				A11DA6D522B69675000128FD /* Animal.swift */,
 			);
 			path = TermProject;
 			sourceTree = "<group>";
@@ -274,10 +283,13 @@
 				A1E77CE622A2A49A00002776 /* AnimalSearchTableViewController.swift in Sources */,
 				A1E77CBA22A29EC000002776 /* ViewController.swift in Sources */,
 				A1A70B4E22B4B05900671BA4 /* HospitalViewController.swift in Sources */,
+				A11DA6D222B679E2000128FD /* HospitalMapViewController.swift in Sources */,
 				A1E77CEA22A2C88400002776 /* HappenPlace.swift in Sources */,
+				A11DA6D422B67C45000128FD /* Hospital.swift in Sources */,
 				A1E77CB822A29EC000002776 /* AppDelegate.swift in Sources */,
 				A1A70B5022B50E7300671BA4 /* HospitalTableViewController.swift in Sources */,
 				A1E77CE822A2A6CC00002776 /* AnimalMapViewController.swift in Sources */,
+				A11DA6D622B69675000128FD /* Animal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
